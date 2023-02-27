@@ -1,0 +1,35 @@
+.profile-wrapper {
+  @include box-shadow;
+  padding: 50px;
+  display: grid;
+  border-radius: 10px;
+  box-sizing: border-box;
+  grid-template-columns: 1fr;
+  column-gap: 100px;
+
+  .left-panel {
+    text-align: center;
+
+    .person-icon {
+      * {
+        font-size: 4rem;
+        color: $theme-primary;
+      }
+    }
+
+    .username {
+      padding-top: 0; 
+      padding-bottom: 10px; 
+    }
+  }
+
+  .right-panel {
+    .skeleton {
+      height: 30px;
+      width: 300px;
+      background: $theme-gray;
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+  }
+}
